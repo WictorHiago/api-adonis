@@ -1,6 +1,6 @@
 # Project API with Adonis Framework
 
-<img src="" width="25%">
+<img src="https://github.com/WictorHiago/api-adonis/blob/main/assets/adonis.png" width="25%">
 
 ## About
 
