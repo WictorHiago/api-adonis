@@ -1,8 +1,8 @@
 # Project API with Adonis Framework
 
 <img src="https://github.com/WictorHiago/api-adonis/blob/main/assets/adonis.png" width="25%">
+<img src="https://github.com/WictorHiago/api-adonis/blob/main/assets/typescript.png" width="10%">
 <img src="https://github.com/WictorHiago/api-adonis/blob/main/assets/postman.png" width="10%">
-<img src="https://github.com/WictorHiago/api-adonis/blob/main/assets/typescript.png" width="6%">
 
 ## About
 
