@@ -1,7 +1,6 @@
 # Project API with Adonis Framework
 
-<img src="https://github.com/WictorHiago/api-adonis/blob/main/assets/adonis.png" width="35%">
-<img src="https://github.com/WictorHiago/api-adonis/blob/main/assets/typescript.png" width="10%">
+<img src="https://github.com/WictorHiago/api-adonis/blob/main/assets/adonis.png" width="45%">
 
 <p align="left">
   <a href="https://skillicons.dev">
