@@ -2,17 +2,16 @@
 
 <img src="https://github.com/WictorHiago/api-adonis/blob/main/assets/adonis.png" width="35%">
 <img src="https://github.com/WictorHiago/api-adonis/blob/main/assets/typescript.png" width="10%">
-<img src="https://github.com/WictorHiago/api-adonis/blob/main/assets/postman.png" width="10%">
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nodejs,adonisjs" />
+    <img src="https://skillicons.dev/icons?i=nodejs,adonis,typescript" />
   </a>
 </p>
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=postgresql" />
+    <img src="https://skillicons.dev/icons?i=nodejs,typescript,postgresql" />
   </a>
 </p>
 <p align="left">
