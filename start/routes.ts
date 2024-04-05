@@ -21,10 +21,9 @@ router.get('/', async () => {
   }
 })
 
-router.post('/product/add', [ProductsController, 'create'])
-
 router
   .group(() => {
+    router.post('/save', [ProductsController, 'create'])
     router.get('/find/products', [FindProductsController, 'find'])
     router.get('/find/:id', [FindbyidProductsController, 'findById'])
     router.get('/find/name/:name_product', [FindByNameProductsController, 'findByName'])

@@ -19,13 +19,13 @@ export default class ProductService {
     return await this.product.create(product)
   }
 
-  async find(id: number) {
-    const product = await this.product.findBy('id', id)
+  // async find(id: number) {
+  //   const product = await this.product.findBy('id', id)
 
-    if (!product) {
-      throw new Error('Product not found')
-    }
+  //   if (!product) {
+  //     throw new Error('Product not found')
+  //   }
 
-    return product
-  }
+  //   return product
+  // }
 }

@@ -8,7 +8,6 @@ export default class FindByNameProductsController {
 
   public async findByName({ params, response }: HttpContext) {
     const { name_product } = params
-    console.log(name_product)
 
     try {
       const product = await this.findProductService.findByName(name_product)
