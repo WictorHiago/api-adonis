@@ -5,15 +5,10 @@
 
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nodejs,adonis,typescript" />
+    <img src="https://skillicons.dev/icons?i=nodejs,adonis,typescript,postgresql,lucid" />
   </a>
 </p>
 
-<p align="left">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=nodejs,typescript,postgresql" />
-  </a>
-</p>
 <p align="left">
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=git,github,docker,vscode,postman,linux" />
