@@ -3,7 +3,7 @@ import { inject } from '@adonisjs/core'
 import FindCategoryService from '#services/categories/find_category.service'
 
 @inject()
-export default class FindbynameCategoriesController {
+export default class FindbynameCategoryController {
   constructor(private findCategoryService: FindCategoryService) {}
 
   public async findByName({ params, response }: HttpContext) {
@@ -12,7 +12,7 @@ export default class FindbynameCategoriesController {
     try {
       const category = await this.findCategoryService.findByName(name_category)
 
-      if (!category) {
+      if (!category || category instanceof Error) {
         return response.status(404).json({ message: 'Category not found' })
       }
 

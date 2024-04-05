@@ -3,7 +3,7 @@ import { inject } from '@adonisjs/core'
 import UpdateCategoryService from '#services/categories/update_category.service'
 
 @inject()
-export default class UpdateCategoriesController {
+export default class UpdateCategoryController {
   constructor(private updateCategoryService: UpdateCategoryService) {}
 
   public async update({ params, request, response }: HttpContext) {

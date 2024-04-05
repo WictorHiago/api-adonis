@@ -12,8 +12,8 @@ export default class DeleteProductController {
     try {
       await this.deleteProductService.delete(id)
       return response.status(200).json({ result: 'Product deleted' })
-    } catch (error) {
-      return response.badRequest(error)
+    } catch (error: any) {
+      return response.status(400).json({ error: error.message })
     }
   }
 }
