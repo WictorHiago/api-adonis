@@ -26,4 +26,13 @@ cd api-adonis
 npm install
 
 npm run dev
+
 ```
+
+## Open Project with Postman
+
+```
+import file in postman desktop or browser
+```
+
+<u><a href="https://www.postman.com/downloads/" target="blank">Postman url</a></u>
