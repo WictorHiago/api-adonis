@@ -1,5 +1,4 @@
 import Category from '../../models/category.js'
-import logger from '@adonisjs/core/services/logger'
 // import Category from ""
 export default class FindCategoryService {
   private category: typeof Category
@@ -16,7 +15,6 @@ export default class FindCategoryService {
 
   public async findById(id: number) {
     const category = await this.category.findBy('id', id)
-    // logger.info(category?.$attributes)
 
     if (!category) {
       return new Error('Category not found')
