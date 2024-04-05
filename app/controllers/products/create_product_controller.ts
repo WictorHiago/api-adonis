@@ -18,7 +18,9 @@ export default class ProductsController {
         !quantity_product ||
         !price_product
       ) {
-        return response.badRequest('Missing required fields')
+        return response.status(400).json({
+          error: 'Missing required fields',
+        })
       }
       const product = await this.productService.create({
         name_product,

@@ -14,7 +14,7 @@ export default class FindProductService {
     return products
   }
 
-  public async find(id: number) {
+  public async findById(id: number) {
     const product = await this.product.findBy('id', id)
 
     if (!product) {
