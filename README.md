@@ -1,8 +1,25 @@
 # Project API with Adonis Framework
 
-<img src="https://github.com/WictorHiago/api-adonis/blob/main/assets/adonis.png" width="25%">
+<img src="https://github.com/WictorHiago/api-adonis/blob/main/assets/adonis.png" width="35%">
 <img src="https://github.com/WictorHiago/api-adonis/blob/main/assets/typescript.png" width="10%">
 <img src="https://github.com/WictorHiago/api-adonis/blob/main/assets/postman.png" width="10%">
+
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=nodejs,adonisjs" />
+  </a>
+</p>
+
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=postgresql" />
+  </a>
+</p>
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,github,docker,vscode,postman,linux" />
+  </a>
+</p>
 
 ## About
 
