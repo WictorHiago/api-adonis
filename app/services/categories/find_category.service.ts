@@ -1,5 +1,4 @@
 import Category from '../../models/category.js'
-// import Category from ""
 export default class FindCategoryService {
   private category: typeof Category
 

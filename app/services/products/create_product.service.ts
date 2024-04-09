@@ -13,7 +13,7 @@ export default class ProductService {
     const productExists = await this.product.findBy('name_product', product.name_product)
 
     if (productExists) {
-      return new Error('Product already exists')
+      throw new Error('Product already exists')
     }
 
     return await this.product.create(product)

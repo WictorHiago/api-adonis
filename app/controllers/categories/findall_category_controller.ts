@@ -12,8 +12,10 @@ export default class FindallCategoriesController {
 
       return response.status(200).json({ result: categories })
     } catch (error) {
-      console.log(error)
-      return response.badRequest({ error: error })
+      if (error instanceof Error) {
+        return response.badRequest({ error: error.message })
+      }
+      return response.badRequest(error)
     }
   }
 }

@@ -21,14 +21,11 @@ export default class CreateCategoryController {
         description_category,
       })
 
-      if (category instanceof Error) {
-        return response.status(400).json({
-          error: category.message,
-        })
-      }
-
       return response.status(201).json({ created: category })
     } catch (error) {
+      if (error instanceof Error) {
+        return response.badRequest({ error: error.message })
+      }
       return response.badRequest(error)
     }
   }

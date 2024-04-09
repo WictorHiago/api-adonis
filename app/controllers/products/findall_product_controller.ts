@@ -12,7 +12,9 @@ export default class FindProductsController {
 
       return response.status(200).json({ result: products })
     } catch (error) {
-      console.log(error)
+      if (error instanceof Error) {
+        return response.badRequest({ error: error.message })
+      }
       return response.badRequest(error)
     }
   }

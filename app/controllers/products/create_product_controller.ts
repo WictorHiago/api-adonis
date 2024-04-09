@@ -30,14 +30,11 @@ export default class ProductsController {
         price_product,
       })
 
-      if (product instanceof Error) {
-        return response.status(400).json({
-          error: product.message,
-        })
-      }
-
       return response.status(201).json({ created: product })
     } catch (error) {
+      if (error instanceof Error) {
+        return response.badRequest({ error: error.message })
+      }
       return response.badRequest(error)
     }
   }

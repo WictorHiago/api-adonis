@@ -13,7 +13,7 @@ export default class CreateCategoryService {
     const categoryExists = await this.category.findBy('name_category', category.name_category)
 
     if (categoryExists) {
-      return new Error('Category already exists')
+      throw new Error('Category already exists')
     }
 
     return await this.category.create(category)
