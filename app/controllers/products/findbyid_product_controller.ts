@@ -10,9 +10,12 @@ export default class FindbyidProductsController {
     const { id } = params
     try {
       const product = await this.findByIdProductService.findById(id)
+
       return response.status(200).json({ result: product })
     } catch (error) {
-      console.log(error)
+      if (error instanceof Error) {
+        return response.status(400).json({ error: error.message })
+      }
       return response.badRequest(error)
     }
   }

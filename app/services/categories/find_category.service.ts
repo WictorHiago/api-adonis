@@ -17,7 +17,7 @@ export default class FindCategoryService {
     const category = await this.category.findBy('id', id)
 
     if (!category) {
-      return new Error('Category not found')
+      throw new Error('Category not found')
     }
 
     return category
@@ -27,7 +27,7 @@ export default class FindCategoryService {
     const category = await this.category.findBy('name_category', name_category)
 
     if (!category) {
-      return new Error('Category not found')
+      throw new Error('Category not found')
     }
 
     return category

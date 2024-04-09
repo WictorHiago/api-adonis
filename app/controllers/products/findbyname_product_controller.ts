@@ -12,7 +12,7 @@ export default class FindByNameProductsController {
     try {
       const product = await this.findProductService.findByName(name_product)
 
-      if (!product) {
+      if (!product || product instanceof Error) {
         return response.status(404).json({ message: 'Product not found' })
       }
 

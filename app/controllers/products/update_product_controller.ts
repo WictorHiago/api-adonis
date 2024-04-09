@@ -24,15 +24,11 @@ export default class UpdateProductsController {
         price_product,
       })
 
-      if (product instanceof Error) {
-        return response.status(400).json({
-          error: product.message,
-        })
-      }
-
       return response.status(201).json({ updated: product })
     } catch (error) {
-      console.log(error)
+      if (error instanceof Error) {
+        return response.badRequest({ error: error.message })
+      }
       return response.badRequest(error)
     }
   }

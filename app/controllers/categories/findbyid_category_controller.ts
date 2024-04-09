@@ -11,14 +11,11 @@ export default class FindbyidCategoryController {
     try {
       const category = await this.findCategoryService.findById(id)
 
-      if (!category) {
-        return response.status(400).json({
-          error: 'Category not found',
-        })
-      }
       return response.status(200).json({ result: category })
     } catch (error) {
-      console.log(error)
+      if (error instanceof Error) {
+        return response.badRequest({ error: error.message })
+      }
       return response.badRequest(error)
     }
   }

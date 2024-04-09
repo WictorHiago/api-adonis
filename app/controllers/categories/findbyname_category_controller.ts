@@ -12,12 +12,11 @@ export default class FindbynameCategoryController {
     try {
       const category = await this.findCategoryService.findByName(name_category)
 
-      if (!category || category instanceof Error) {
-        return response.status(404).json({ message: 'Category not found' })
-      }
-
       return response.status(200).json({ result: category })
     } catch (error) {
+      if (error instanceof Error) {
+        return response.badRequest({ error: error.message })
+      }
       return response.badRequest(error)
     }
   }
