@@ -24,7 +24,7 @@ Below I will make the repository link for other services available.
 
 </p>
 
-<u><a href="https://github.com/WictorHiago/api-adonis-user-management" target="_blank">Repository: User manager services api</a></u>
+<a href="https://github.com/WictorHiago/api-adonis-user-management" target="_blank"><u>Repository: User manager services api</u></a>
 <br>
 <u><a href="#" target="blank">Repository: Queue Rabbitmq services</a></u>
 
